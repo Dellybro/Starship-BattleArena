@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2433423643480961042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2433423643480961049}
+  - component: {fileID: 2433423643480961054}
+  - component: {fileID: 2433423643480961055}
+  - component: {fileID: 2433423643480961052}
+  - component: {fileID: 2433423643480961053}
+  m_Layer: 0
+  m_Name: NetworkSpawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2433423643480961049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2433423643480961042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.117711, y: -5.5778766, z: -683.5096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2433423643480961054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2433423643480961042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 
+  hasSpawned: 0
+--- !u!114 &2433423643480961055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2433423643480961042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0f923e66e6842df9f086825e04a225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundaryX: 60
+  boundaryY: 60
+  speedX: 0.03
+  speedY: 0.03
+  blackHolePrefab: {fileID: 953340452720781629, guid: a0a20ff1c25d7439ab7156eecef2db04, type: 3}
+  isActive: 0
+--- !u!114 &2433423643480961052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2433423643480961042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d06edcec1d40e4f88a48381168b83610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundaryX: 40
+  boundaryY: 40
+  speedX: 0.03
+  speedY: 0.03
+  debrisPrefab: {fileID: 8178495732950192926, guid: 7bc221b804f914750b072e344039bf36, type: 3}
+  maxDebris: 10
+  astroidPrefab: {fileID: 5036778636736840552, guid: 530402fc40d2444fb859b18444b6a6a5, type: 3}
+  maxAsteroid: 10
+--- !u!114 &2433423643480961053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2433423643480961042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573e675fb927149aba7aab8a28cfecb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundaryX: 40
+  boundaryY: 40
+  healthPackPrefab: {fileID: 2234011089060917253, guid: 2590ff9d8c6604a3aa27fd31374feaf8, type: 3}
